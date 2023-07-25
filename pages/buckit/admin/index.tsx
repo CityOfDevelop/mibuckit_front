@@ -87,4 +87,3 @@ export default function Profile() {
     </MainLayout>
   );
 }
-ccc;
