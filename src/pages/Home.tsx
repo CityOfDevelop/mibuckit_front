@@ -1,11 +1,11 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <div>Home</div>
+      {' '}
+      <h1>🟥 pages : Home 🟥</h1>
       <Footer />
     </>
   );
