@@ -9,8 +9,15 @@ interface LoginOption {
   icon: React.ReactElement;
   onClick: () => void;
 }
+
+//카카오 로그인_필요한 정보
+export const Rest_api_key = '90f10e8c1b10fc14551f41210f311954'; // REST API KEY
+export const redirect_uri = 'http://localhost:3000/kakaoLogin'; // Redirect URI
+
 export function useHelper(testMode: boolean) {
   const navigate = useNavigate();
+
+  const KAKAO_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`;
 
   const handleLogin = useCallback((mode: LoginType) => {
     switch (mode) {
@@ -22,6 +29,7 @@ export function useHelper(testMode: boolean) {
         break;
       case 'KAKAO':
         console.log('카카오 로그인');
+        window.location.href = KAKAO_URL;
         break;
       case 'TEST':
         navigate('/');

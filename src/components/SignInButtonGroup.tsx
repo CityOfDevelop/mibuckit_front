@@ -15,7 +15,7 @@ export default function SignInButtonGroup({ options }: SignInButtonGroupProps) {
   return (
     <div>
       {options.map(opt => (
-        <button onClick={opt.onClick}>
+        <button key={opt.value} onClick={opt.onClick}>
           <span>{opt.icon}</span>
         </button>
       ))}
