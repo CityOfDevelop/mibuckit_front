@@ -22,6 +22,12 @@ export default function Header() {
         <div className="text-[#6D6D6D]" onClick={() => navigate('/mypage')}>
           주말농장
         </div>
+        <div className="text-[#6D6D6D]" onClick={() => navigate('/login')}>
+          로그인
+        </div>
+        <div className="text-[#6D6D6D]" onClick={() => navigate('/signup')}>
+          회원가입
+        </div>
       </div>
       <div className="flex items-center gap-6">
         <div id="search_bar" className="w-32 h-5 bg-gray-200 rounded-lg" />
