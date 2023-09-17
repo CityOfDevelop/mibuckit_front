@@ -11,8 +11,6 @@ import KakaoLogin from './pages/KakaoLogin';
 function App() {
   return (
     <>
-      <Header />
-      <h1>App</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -21,7 +19,6 @@ function App() {
         <Route path="/mypage" element={<Mypage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </>
   );
 }

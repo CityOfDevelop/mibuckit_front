@@ -3,10 +3,9 @@ import SignInProd from '../components/SignInProd';
 
 export default function Login() {
   return (
-    <>
-      <h1>🟥 pages : Login 🟥</h1>
+    <div className="flex flex-col h-screen">
       <LoginForm />
       <SignInProd />
-    </>
+    </div>
   );
 }

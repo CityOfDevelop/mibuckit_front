@@ -47,16 +47,19 @@ export default function LoginForm() {
   };
 
   const navigate = useNavigate();
-  return (
-    <div className="flex justify-center">
-      <form className="flex flex-col" onSubmit={handleSubmit}>
-        <h1>🟥 Components : LoginForm 🟥</h1>
 
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <div>PurDream</div>
+      <div>로그인</div>
+      <form className="flex flex-col" onSubmit={handleSubmit}>
         {/* <Label htmlFor="id">ID</Label> */}
-        <input className="" type="text" id="id" placeholder="아이디를 입력해주세요." value={formData.id} onChange={handleChange} />
-        <p className="message">{message.id}</p>
-        <input type="password" id="pw" placeholder="비밀번호를 입력해주세요." value={formData.pw} onChange={handleChange} maxLength={12} />
-        <p className="message">{message.pw}</p>
+        <div>
+          <input className="" type="text" id="id" placeholder="이메일" value={formData.id} onChange={handleChange} />
+          <p className="message">{message.id}</p>
+          <input type="password" id="pw" placeholder="비밀번호" value={formData.pw} onChange={handleChange} maxLength={12} />
+          <p className="message">{message.pw}</p>
+        </div>
         <div>
           <span>아이디 찾기</span>
           <span>/</span>
